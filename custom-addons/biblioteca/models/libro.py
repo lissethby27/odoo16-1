@@ -50,3 +50,16 @@ class BibliotecaLibro(models.Model):
     # --- Otros ---
     descripcion = fields.Text(string='Sinopsis o Resumen')
     active = fields.Boolean(string='Activo', default=True) # Campo para archivar
+    
+    # --- CAMPO CALCULADO (NUEVO) ---
+    total_prestamos = fields.Integer(
+        string='Total Préstamos', 
+        compute='_compute_total_prestamos',
+        help="Cantidad total de veces que este libro ha sido prestado"
+    )
+
+    @api.depends('prestamo_ids')
+    def _compute_total_prestamos(self):
+        for record in self:
+            # Contamos cuántos registros hay en la relación One2many de préstamos
+            record.total_prestamos = len(record.prestamo_ids)

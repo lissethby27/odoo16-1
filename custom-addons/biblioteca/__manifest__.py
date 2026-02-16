@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Gestión de Biblioteca',
-    'version': '16.0.0.1.0',
+    'category': 'Productivity',
+    'version': '16.0.1.0.0',
     'summary': 'Módulo para gestión de libros, autores y préstamos',
     'author': 'Lisseth Bentura',
-    'depends': ['base', 'contacts'],
+    'depends': ['base', 'contacts', 'web'],
     'data': [
         'security/groups.xml',
         'security/ir.model.access.csv',
