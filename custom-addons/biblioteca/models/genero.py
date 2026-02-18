@@ -12,3 +12,5 @@ class BibliotecaGenero(models.Model):
     _sql_constraints = [
         ('unique_genero_name', 'unique(name)', 'Ya existe un género con este nombre.')
     ]
+    
+    

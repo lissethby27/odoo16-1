@@ -63,3 +63,5 @@ class BibliotecaLibro(models.Model):
         for record in self:
             # Contamos cuántos registros hay en la relación One2many de préstamos
             record.total_prestamos = len(record.prestamo_ids)
+
+            

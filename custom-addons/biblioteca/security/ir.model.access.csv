@@ -18,3 +18,5 @@ access_prestamo_manager,prestamo.manager,model_biblioteca_prestamo,biblioteca.gr
 # --- TABLA INTERMEDIA (Autor/Libro): Solo lectura para el usuario ---
 access_autlibro_user,autlibro.user,model_biblioteca_autor_libro,biblioteca.group_biblioteca_user,1,0,0,0
 access_autlibro_manager,autlibro.manager,model_biblioteca_autor_libro,biblioteca.group_biblioteca_manager,1,1,1,1
+
+

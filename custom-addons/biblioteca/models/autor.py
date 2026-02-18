@@ -16,3 +16,5 @@ class BibliotecaAutor(models.Model):
         'autor_id', 
         string='Libros del Autor'
     )
+    
+    

@@ -19,3 +19,5 @@ class BibliotecaAutorLibro(models.Model):
     _sql_constraints = [
         ('unique_autor_libro', 'unique(libro_id, autor_id)', 'Este autor ya está asignado a este libro.')
     ]
+    
+    
