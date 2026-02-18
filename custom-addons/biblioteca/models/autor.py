@@ -8,7 +8,7 @@ class BibliotecaAutor(models.Model):
     nacionalidad = fields.Char(string='Nacionalidad')
     biografia = fields.Text(string='Biografía')
     
-    # IMPORTANTE: El nombre debe ser exacto y el string obligatorio
+    # Campo para almacenar la foto del autor
     image_1920 = fields.Binary(string="Foto del Autor")
     
     libro_autor_ids = fields.One2many(
